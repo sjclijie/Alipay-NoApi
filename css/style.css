@@ -1,0 +1,293 @@
+body, input, select, textarea {
+    color: #646464;
+    font-family: "Heiti SC","Microsoft YaHei";
+    font-size: 15pt;
+    font-weight: 300;
+    line-height: 1.75em;
+    text-shadow: 0px 0px 0.3px #999;
+    background-color:#f2f2f2;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    max-width:100%;
+}
+#header h1 a img{
+	margin-top:10px;
+}
+input[type=text], input[type=password], select, textarea {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    padding: 0.70em 1em;
+    font-size: 1em;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0);
+    -moz-transition: background-color 0.25s ease-in-out, border-color 0.35s ease-in-out;
+    -webkit-transition: background-color 0.25s ease-in-out, border-color 0.35s ease-in-out;
+    -o-transition: background-color 0.25s ease-in-out, border-color 0.35s ease-in-out;
+    -ms-transition: background-color 0.25s ease-in-out, border-color 0.35s ease-in-out;
+    transition: background-color 0.25s ease-in-out, border-color 0.35s ease-in-out;
+    outline: none;
+    color: #888787;
+    margin-top:1em;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+	background: rgba(224, 224, 224, 0.15);
+	border-color: #66CCFF;
+}
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out !important;
+    -webkit-transition: background-color 0.2s ease-in-out !important;
+    -o-transition: background-color 0.2s ease-in-out !important;
+    -ms-transition: background-color 0.2s ease-in-out !important;
+    transition: background-color 0.2s ease-in-out !important;
+    background-color: none;
+    border-radius: 6px;
+    border: solid 1px;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    min-width: 18em;
+    padding: 0 0.75em;
+    line-height: 3.75em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.button:hover {
+    color:inherit !important;
+    background-color: rgba(188, 202, 206, 0.15);
+}
+
+#header {
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    color: inherit;
+    cursor: default;
+    height: 3em;
+    left: 0;
+    line-height: 3em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+#header h1 {
+    color: inherit;
+    font-size: 1.5em;
+    height: inherit;
+    left: 1.25em;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+#header h1 img{
+    margin-top:8px;
+}
+
+.content{
+    margin-top:4em;
+    margin-left:2%;
+    background: #ffffff;
+    border-radius: 0.5em;
+    width:94%;
+    display:block;
+    padding:1em;
+    text-align: center;
+    position: relative;
+}
+
+#popwindow{
+    z-index:99999;
+    position: absolute;
+    background-color: white;
+    border-radius: 6px;
+    width:60%;
+    min-width:475px;
+    min-height:600px;
+    border:1px solid #66CCFF;
+    text-align: center;
+}
+
+.tbar{
+    margin-top:0.5em;
+    margin-bottom:0.3em;
+    border-bottom:1px solid #66CCFF;
+}
+#squaresWaveG{
+position:relative;
+width:240px;
+height:29px}
+
+.squaresWaveG{
+position:absolute;
+top:0;
+background-color:#66CCFF;
+width:29px;
+height:29px;
+-moz-animation-name:bounce_squaresWaveG;
+-moz-animation-duration:1.3s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:linear;
+-webkit-animation-name:bounce_squaresWaveG;
+-webkit-animation-duration:1.3s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:linear;
+-ms-animation-name:bounce_squaresWaveG;
+-ms-animation-duration:1.3s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:linear;
+-o-animation-name:bounce_squaresWaveG;
+-o-animation-duration:1.3s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:linear;
+animation-name:bounce_squaresWaveG;
+animation-duration:1.3s;
+animation-iteration-count:infinite;
+animation-direction:linear;
+}
+
+#squaresWaveG_1{
+left:0;
+-moz-animation-delay:0.52s;
+-webkit-animation-delay:0.52s;
+-ms-animation-delay:0.52s;
+-o-animation-delay:0.52s;
+animation-delay:0.52s;
+}
+
+#squaresWaveG_2{
+left:30px;
+-moz-animation-delay:0.65s;
+-webkit-animation-delay:0.65s;
+-ms-animation-delay:0.65s;
+-o-animation-delay:0.65s;
+animation-delay:0.65s;
+}
+
+#squaresWaveG_3{
+left:60px;
+-moz-animation-delay:0.78s;
+-webkit-animation-delay:0.78s;
+-ms-animation-delay:0.78s;
+-o-animation-delay:0.78s;
+animation-delay:0.78s;
+}
+
+#squaresWaveG_4{
+left:90px;
+-moz-animation-delay:0.91s;
+-webkit-animation-delay:0.91s;
+-ms-animation-delay:0.91s;
+-o-animation-delay:0.91s;
+animation-delay:0.91s;
+}
+
+#squaresWaveG_5{
+left:120px;
+-moz-animation-delay:1.04s;
+-webkit-animation-delay:1.04s;
+-ms-animation-delay:1.04s;
+-o-animation-delay:1.04s;
+animation-delay:1.04s;
+}
+
+#squaresWaveG_6{
+left:150px;
+-moz-animation-delay:1.17s;
+-webkit-animation-delay:1.17s;
+-ms-animation-delay:1.17s;
+-o-animation-delay:1.17s;
+animation-delay:1.17s;
+}
+
+#squaresWaveG_7{
+left:180px;
+-moz-animation-delay:1.3s;
+-webkit-animation-delay:1.3s;
+-ms-animation-delay:1.3s;
+-o-animation-delay:1.3s;
+animation-delay:1.3s;
+}
+
+#squaresWaveG_8{
+left:210px;
+-moz-animation-delay:1.43s;
+-webkit-animation-delay:1.43s;
+-ms-animation-delay:1.43s;
+-o-animation-delay:1.43s;
+animation-delay:1.43s;
+}
+
+@-moz-keyframes bounce_squaresWaveG{
+0%{
+background-color:#66CCFF;
+}
+
+100%{
+background-color:#FFFFFF;
+}
+
+}
+
+@-webkit-keyframes bounce_squaresWaveG{
+0%{
+background-color:#66CCFF;
+}
+
+100%{
+background-color:#FFFFFF;
+}
+
+}
+
+@-ms-keyframes bounce_squaresWaveG{
+0%{
+background-color:#66CCFF;
+}
+
+100%{
+background-color:#FFFFFF;
+}
+
+}
+
+@-o-keyframes bounce_squaresWaveG{
+0%{
+background-color:#66CCFF;
+}
+
+100%{
+background-color:#FFFFFF;
+}
+
+}
+
+@keyframes bounce_squaresWaveG{
+0%{
+background-color:#66CCFF;
+}
+
+100%{
+background-color:#FFFFFF;
+}
+
+}
